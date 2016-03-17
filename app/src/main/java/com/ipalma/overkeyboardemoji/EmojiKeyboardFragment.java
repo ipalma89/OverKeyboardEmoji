@@ -31,7 +31,7 @@ public class EmojiKeyboardFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_emoji_keyboard, container, false);
         this.parentLayout = (LinearLayout) v.findViewById(R.id.emojiKeyboardParentLayout);
-//        this.setHeight((int) getResources().getDimension(R.dimen.emojis_default_height));
+        this.setHeight((int) getResources().getDimension(R.dimen.emojis_default_height));
 
         return v;
     }
