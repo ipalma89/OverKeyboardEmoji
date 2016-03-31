@@ -89,6 +89,9 @@ public class EmojiKeyboardFragment extends Fragment {
     }
 
     private void setHeight(int height) {
+        if (this.keyboardHeight == height) {
+            return;
+        }
         this.keyboardHeight = height;
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, this.keyboardHeight);
         this.parentLayout.setLayoutParams(params);
